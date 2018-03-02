@@ -19,7 +19,7 @@ function addEmployeeRecordToEmployeeTable(employeeRecord){
 
 function init(){
   employeeTable = new EmployeeTable(EMPLOYEE_HTML_TABLE_ID);
-  employeeDatabase = new LocalDatabase(DATABASE_NAME);
+  employeeDatabase = new LocalStorageDatabase(DATABASE_NAME);
   loadPersistentDataInsideTableIfAvailable();
   var employeeRecordEntry = new EmployeeRecordEntry(RECORD_ENTRY_ID);
   employeeRecordEntry.setOnSubmitHandler(addEmployeeRecordToEmployeeTable);
