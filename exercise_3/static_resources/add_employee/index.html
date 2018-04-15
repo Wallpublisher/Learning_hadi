@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Employee</title>
+    <script src="/add_employee/init.js" ></script>
+    <script src="/js/form/FieldsControlHelper.js"></script>
+    <script src="/js/table/EmployeeTable.js"></script>
+    <script src="/js/EmployeeRecord.js"></script>
+    <script src="/js/form/EmployeeRecordEntry.js"></script>
+    <script src="/js/form/FormValidationHelper.js"></script>
+    <script src="/js/promise/Promise.js" ></script>
+    <script src="/js/promise/HitAndRunPromiseEvent.js" ></script>
+    <script src="/js/httprequest/ASyncHttpRequest.js" ></script>
+    <script src="/js/retrieveEmployeeRecords.js" ></script>
+  </head>
+  <body style="text-align:center;">
+    <div id="employee_record_entry" >
+      <label>First Name:</label>
+      <input class="first_name" type="text"/>
+      <label>Last Name:</label>
+      <input class="last_name" type="text"/>
+      <label>Birthday:</label>
+      <input class="birthday_date" type="date"/>
+      <input class="submit_button" value="Submit" type="button"/>
+    </div>
+    <hr/>
+    <table id="employee_table" border="2" width="100%">
+      <tr>
+        <td>First Name</td>
+        <td>Second Name</td>
+        <td>Birthday</td>
+      </tr>
+    </table>
+  </body>
+</html>
