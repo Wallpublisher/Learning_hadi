@@ -1,6 +1,6 @@
 //Hostname and port
 
-const hostname = "192.168.1.19";
+const hostname = "127.0.0.1";
 const port = 8080;
 
 //Use Cases

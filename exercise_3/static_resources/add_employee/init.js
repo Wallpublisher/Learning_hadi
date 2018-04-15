@@ -9,7 +9,7 @@ window.onload = init;
 
 function sendEmployeeRecordToServer(employeeRecord){
   return new Promise((finish,fail) => {
-    asyncHttpRequest = new ASyncHttpRequest("POST","http://192.168.1.19:8080/api/new");
+    asyncHttpRequest = new ASyncHttpRequest("POST",document.location.origin+"/api/new");
     asyncHttpRequest.submit(JSON.stringify(employeeRecord))
     .then((response) => {
       var result = JSON.parse(response.body);
